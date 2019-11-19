@@ -3,6 +3,8 @@
 // HTML Elements
 let numEl = document.getElementById('numInput');
 
+
+
  
 // Add Event Listener
 numEl.addEventListener('change', analyzeNumber);
@@ -50,7 +52,14 @@ function evenishOrOddish(oddish, evenish) {
     if (numInput % 2 == 0) {
         numInput = numInput * -1;
         return evenish;
+
+    }else {
+        
+        return 'decimal';
+        
     }
+    
+    
 }
  
 function multipleOf10(indeed, denied) {
@@ -60,6 +69,7 @@ function multipleOf10(indeed, denied) {
 
     } else {
         return denied;
+        
     }
 
  
